@@ -1,0 +1,1 @@
+{"category": "", "process_name": "As Measured", "description": "As Measured", "setup": [{"attribute": "instrument", "name": "Instrument", "properties": []}], "measurements": [], "does_transform": false, "process_type": "measurement", "otype": "template", "owner": "template-admin", "destructive": false, "id": "global_As Measured", "name": "As Measured"}
