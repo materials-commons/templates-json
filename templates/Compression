@@ -1,1 +1,103 @@
-{"category": "", "process_name": "Compression", "description": "Compression", "setup": [{"attribute": "instrument", "name": "Instrument", "properties": [{"description": "", "attribute": "temperature", "required": false, "value": "", "choices": [], "otype": "number", "units": ["K", "F", "C"], "unit": "", "name": "Temperature"}, {"description": "", "attribute": "true_strain", "required": false, "value": "", "choices": [], "otype": "number", "units": ["mm/mm", "percentage"], "unit": "", "name": "True Strain"}, {"description": "", "attribute": "engineering_strain", "required": false, "value": "", "choices": [], "otype": "number", "units": ["mm/mm", "percentage"], "unit": "", "name": "Engineering Strain"}, {"description": "", "attribute": "strain_rate", "required": false, "value": "", "choices": [], "otype": "number", "units": ["1/s", "mm/min"], "unit": "", "name": "Strain Rate"}, {"description": "", "attribute": "target_total_strain", "required": false, "value": "", "choices": [], "otype": "number", "units": ["mm/mm", "percentage"], "unit": "", "name": "Target Total Strain"}, {"description": "", "attribute": "load_rate", "required": false, "value": "", "choices": [], "otype": "number", "units": [], "unit": "", "name": "Load Rate"}]}], "measurements": [], "does_transform": true, "process_type": "transform", "otype": "template", "owner": "template-admin", "destructive": false, "id": "global_Compression", "name": "Compression"}
+{
+    "category": "", 
+    "process_name": "Compression", 
+    "description": "Compression", 
+    "setup": [
+        {
+            "attribute": "instrument", 
+            "name": "Instrument", 
+            "properties": [
+                {
+                    "description": "", 
+                    "attribute": "temperature", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [
+                        "K", 
+                        "F", 
+                        "C"
+                    ], 
+                    "unit": "", 
+                    "name": "Temperature"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "true_strain", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [
+                        "mm/mm", 
+                        "percentage"
+                    ], 
+                    "unit": "", 
+                    "name": "True Strain"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "engineering_strain", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [
+                        "mm/mm", 
+                        "percentage"
+                    ], 
+                    "unit": "", 
+                    "name": "Engineering Strain"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "strain_rate", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [
+                        "1/s", 
+                        "mm/min"
+                    ], 
+                    "unit": "", 
+                    "name": "Strain Rate"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "target_total_strain", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [
+                        "mm/mm", 
+                        "percentage"
+                    ], 
+                    "unit": "", 
+                    "name": "Target Total Strain"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "load_rate", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Load Rate"
+                }
+            ]
+        }
+    ], 
+    "measurements": [], 
+    "does_transform": true, 
+    "process_type": "transform", 
+    "otype": "template", 
+    "owner": "template-admin", 
+    "destructive": false, 
+    "id": "global_Compression", 
+    "name": "Compression"
+}

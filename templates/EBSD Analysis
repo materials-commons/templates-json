@@ -1,1 +1,67 @@
-{"process_name": "EBSD Analysis", "description": null, "setup": [{"attribute": "instrument", "name": "Instrument", "properties": [{"description": "", "attribute": "script_code_used", "required": false, "choices": [], "otype": "string", "units": [], "name": "Script/Code used"}, {"description": "", "attribute": "voltage", "required": false, "hasUnitGroup": 1, "otype": "float", "units": ["kV"], "choices": [], "name": "Voltage"}, {"description": "", "attribute": "scan_size_(width_x_height)", "required": false, "choices": [], "otype": "string", "units": [], "name": "Scan Size (Width x Height)"}, {"description": "", "attribute": "horizontal_direction", "required": false, "choices": [], "otype": "string", "units": [], "name": "Horizontal Direction"}, {"description": "", "attribute": "vertical_direction", "required": false, "choices": [], "otype": "string", "units": [], "name": "Vertical Direction"}]}], "measurements": [], "does_transform": true, "process_type": "transform", "owner": "challan@umich.edu", "template_description": "", "id": "global_EBSD Analysis", "name": "EBSD Analysis"}
+{
+    "process_name": "EBSD Analysis", 
+    "description": null, 
+    "setup": [
+        {
+            "attribute": "instrument", 
+            "name": "Instrument", 
+            "properties": [
+                {
+                    "description": "", 
+                    "attribute": "script_code_used", 
+                    "required": false, 
+                    "choices": [], 
+                    "otype": "string", 
+                    "units": [], 
+                    "name": "Script/Code used"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "voltage", 
+                    "required": false, 
+                    "hasUnitGroup": 1, 
+                    "otype": "float", 
+                    "units": [
+                        "kV"
+                    ], 
+                    "choices": [], 
+                    "name": "Voltage"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "scan_size_(width_x_height)", 
+                    "required": false, 
+                    "choices": [], 
+                    "otype": "string", 
+                    "units": [], 
+                    "name": "Scan Size (Width x Height)"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "horizontal_direction", 
+                    "required": false, 
+                    "choices": [], 
+                    "otype": "string", 
+                    "units": [], 
+                    "name": "Horizontal Direction"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "vertical_direction", 
+                    "required": false, 
+                    "choices": [], 
+                    "otype": "string", 
+                    "units": [], 
+                    "name": "Vertical Direction"
+                }
+            ]
+        }
+    ], 
+    "measurements": [], 
+    "does_transform": true, 
+    "process_type": "transform", 
+    "owner": "challan@umich.edu", 
+    "template_description": "", 
+    "id": "global_EBSD Analysis", 
+    "name": "EBSD Analysis"
+}

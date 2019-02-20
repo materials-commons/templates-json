@@ -1,1 +1,43 @@
-{"category": "create_sample", "process_name": "Phase Field System", "description": "Phase Field System", "setup": [{"attribute": "computation", "name": "Computation", "properties": []}], "measurements": [{"description": "Describes the physical model. Ex: CahnHilliard, AllenCahn, CoupledCahnHilliardAllenCahn, etc...", "attribute": "application", "required": false, "value": "", "choices": [], "otype": "string", "units": [], "unit": "", "name": "Application"}, {"description": "", "attribute": "interpolation_function", "required": false, "value": "", "choices": [], "otype": "function", "units": [], "unit": "", "name": "Interpolation Function"}], "does_transform": true, "process_type": "create", "otype": "template", "owner": "template-admin", "destructive": false, "id": "global_Phase Field System", "name": "Phase Field System"}
+{
+    "category": "create_sample", 
+    "process_name": "Phase Field System", 
+    "description": "Phase Field System", 
+    "setup": [
+        {
+            "attribute": "computation", 
+            "name": "Computation", 
+            "properties": []
+        }
+    ], 
+    "measurements": [
+        {
+            "description": "Describes the physical model. Ex: CahnHilliard, AllenCahn, CoupledCahnHilliardAllenCahn, etc...", 
+            "attribute": "application", 
+            "required": false, 
+            "value": "", 
+            "choices": [], 
+            "otype": "string", 
+            "units": [], 
+            "unit": "", 
+            "name": "Application"
+        }, 
+        {
+            "description": "", 
+            "attribute": "interpolation_function", 
+            "required": false, 
+            "value": "", 
+            "choices": [], 
+            "otype": "function", 
+            "units": [], 
+            "unit": "", 
+            "name": "Interpolation Function"
+        }
+    ], 
+    "does_transform": true, 
+    "process_type": "create", 
+    "otype": "template", 
+    "owner": "template-admin", 
+    "destructive": false, 
+    "id": "global_Phase Field System", 
+    "name": "Phase Field System"
+}

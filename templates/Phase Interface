@@ -1,1 +1,91 @@
-{"category": "create_sample", "process_name": "Phase Interface", "description": "Phase Interface", "setup": [{"attribute": "computation", "name": "Computation", "properties": []}], "measurements": [{"description": "The phases separated by this interface", "attribute": "phases", "required": false, "value": {"otype": "string", "dimensions": 2, "value": []}, "choices": [], "otype": "vector", "units": [], "unit": "", "name": "Phases"}, {"description": "", "attribute": "model", "required": false, "value": "", "choices": [], "otype": "string", "units": [], "unit": "", "name": "Model"}, {"description": "", "attribute": "allen_cahn_mobility", "required": false, "value": "", "choices": [], "otype": "float", "units": [], "unit": "", "name": "Allen-Cahn Mobility"}, {"description": "", "attribute": "structural_order_parameter_gradient_penalty_coefficient_vector", "required": false, "value": {"otype": "float", "dimensions": 3, "value": []}, "choices": [], "otype": "vector", "units": [], "unit": "", "name": "Structural Order Parameter Gradient Penalty Coefficient Vector"}, {"description": "", "attribute": "structural_order_parameter_gradient_penalty_coefficient_matrix", "required": false, "value": {"otype": "float", "dimensions": [3, 3], "value": []}, "choices": [], "otype": "matrix", "units": [], "unit": "", "name": "Structural Order Parameter Gradient Penalty Coefficient Matrix"}], "does_transform": true, "process_type": "create", "otype": "template", "owner": "template-admin", "destructive": false, "id": "global_Phase Interface", "name": "Phase Interface"}
+{
+    "category": "create_sample", 
+    "process_name": "Phase Interface", 
+    "description": "Phase Interface", 
+    "setup": [
+        {
+            "attribute": "computation", 
+            "name": "Computation", 
+            "properties": []
+        }
+    ], 
+    "measurements": [
+        {
+            "description": "The phases separated by this interface", 
+            "attribute": "phases", 
+            "required": false, 
+            "value": {
+                "otype": "string", 
+                "dimensions": 2, 
+                "value": []
+            }, 
+            "choices": [], 
+            "otype": "vector", 
+            "units": [], 
+            "unit": "", 
+            "name": "Phases"
+        }, 
+        {
+            "description": "", 
+            "attribute": "model", 
+            "required": false, 
+            "value": "", 
+            "choices": [], 
+            "otype": "string", 
+            "units": [], 
+            "unit": "", 
+            "name": "Model"
+        }, 
+        {
+            "description": "", 
+            "attribute": "allen_cahn_mobility", 
+            "required": false, 
+            "value": "", 
+            "choices": [], 
+            "otype": "float", 
+            "units": [], 
+            "unit": "", 
+            "name": "Allen-Cahn Mobility"
+        }, 
+        {
+            "description": "", 
+            "attribute": "structural_order_parameter_gradient_penalty_coefficient_vector", 
+            "required": false, 
+            "value": {
+                "otype": "float", 
+                "dimensions": 3, 
+                "value": []
+            }, 
+            "choices": [], 
+            "otype": "vector", 
+            "units": [], 
+            "unit": "", 
+            "name": "Structural Order Parameter Gradient Penalty Coefficient Vector"
+        }, 
+        {
+            "description": "", 
+            "attribute": "structural_order_parameter_gradient_penalty_coefficient_matrix", 
+            "required": false, 
+            "value": {
+                "otype": "float", 
+                "dimensions": [
+                    3, 
+                    3
+                ], 
+                "value": []
+            }, 
+            "choices": [], 
+            "otype": "matrix", 
+            "units": [], 
+            "unit": "", 
+            "name": "Structural Order Parameter Gradient Penalty Coefficient Matrix"
+        }
+    ], 
+    "does_transform": true, 
+    "process_type": "create", 
+    "otype": "template", 
+    "owner": "template-admin", 
+    "destructive": false, 
+    "id": "global_Phase Interface", 
+    "name": "Phase Interface"
+}

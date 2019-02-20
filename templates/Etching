@@ -1,1 +1,76 @@
-{"category": "", "process_name": "Etching", "description": "Etching", "setup": [{"attribute": "instrument", "name": "Instrument", "properties": [{"description": "", "attribute": "solution", "required": false, "value": "", "choices": [], "otype": "string", "units": [], "unit": "", "name": "Solution"}, {"description": "", "attribute": "voltage", "required": false, "value": "", "choices": [], "otype": "number", "units": ["kV", "V"], "unit": "", "name": "Voltage"}, {"description": "", "attribute": "time", "required": false, "value": "", "choices": [], "otype": "number", "units": ["h", "m", "s"], "unit": "", "name": "Time"}, {"description": "", "attribute": "temperature", "required": false, "value": "", "choices": [], "otype": "number", "units": ["K", "F", "C"], "unit": "", "name": "Temperature"}]}], "measurements": [], "does_transform": true, "process_type": "transform", "otype": "template", "owner": "template-admin", "destructive": false, "id": "global_Etching", "name": "Etching"}
+{
+    "category": "", 
+    "process_name": "Etching", 
+    "description": "Etching", 
+    "setup": [
+        {
+            "attribute": "instrument", 
+            "name": "Instrument", 
+            "properties": [
+                {
+                    "description": "", 
+                    "attribute": "solution", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "string", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Solution"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "voltage", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [
+                        "kV", 
+                        "V"
+                    ], 
+                    "unit": "", 
+                    "name": "Voltage"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "time", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [
+                        "h", 
+                        "m", 
+                        "s"
+                    ], 
+                    "unit": "", 
+                    "name": "Time"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "temperature", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [
+                        "K", 
+                        "F", 
+                        "C"
+                    ], 
+                    "unit": "", 
+                    "name": "Temperature"
+                }
+            ]
+        }
+    ], 
+    "measurements": [], 
+    "does_transform": true, 
+    "process_type": "transform", 
+    "otype": "template", 
+    "owner": "template-admin", 
+    "destructive": false, 
+    "id": "global_Etching", 
+    "name": "Etching"
+}

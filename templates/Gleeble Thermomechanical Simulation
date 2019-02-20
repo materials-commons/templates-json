@@ -1,1 +1,330 @@
-{"can_edit": true, "process_name": "Gleeble Thermomechanical Simulation", "description": null, "setup": [{"attribute": "instrument", "name": "Instrument", "properties": [{"description": "", "attribute": "anvil", "required": false, "choices": [{"name": "Plane Strain", "value": "plane_strain"}, {"name": "Flow Stress", "value": "flow_stress"}], "otype": "selection", "units": [], "name": "Anvil"}, {"description": "", "attribute": "sample_diameter", "required": false, "hasUnitGroup": true, "otype": "float", "units": ["m", "c", "mm", "nm"], "choices": [], "name": "Sample Diameter"}, {"description": "", "attribute": "program_strain_type", "required": false, "choices": [{"name": "Engineering Strain", "value": "engineering_strain"}, {"name": "True Strain", "value": "true_strain"}, {"name": "Percent Reduction", "value": "percent_reduction"}, {"name": "Deformation (mm)", "value": "deformation_(mm)"}], "otype": "selection", "units": [], "name": "Program Strain Type"}, {"description": "", "attribute": "initial_thickness", "required": false, "hasUnitGroup": true, "otype": "float", "units": ["m", "c", "mm", "nm"], "choices": [], "name": "Initial Thickness"}, {"description": "", "attribute": "first_soak_temperature", "required": false, "hasUnitGroup": true, "otype": "float", "units": ["f", "c"], "choices": [], "name": "First Soak Temperature"}, {"description": "", "attribute": "rate_to_temp", "required": false, "hasUnitGroup": true, "otype": "float", "units": ["C/s", "K/s"], "choices": [], "name": "Rate to Temp"}, {"description": "", "attribute": "soak_time", "required": false, "hasUnitGroup": true, "otype": "float", "units": ["h", "m", "s"], "choices": [], "name": "Soak Time"}, {"description": "", "attribute": "strain_rate", "required": false, "choices": [], "otype": "float", "units": [], "name": "Strain Rate"}, {"description": "", "attribute": "strain", "required": false, "hasUnitGroup": true, "otype": "float", "units": ["percentage", "mm/mm"], "choices": [], "name": "Strain"}, {"description": "", "attribute": "dwell_time", "required": false, "hasUnitGroup": true, "otype": "float", "units": ["h", "m", "s"], "choices": [], "name": "Dwell Time"}, {"description": "", "attribute": "rate_adjust", "required": false, "hasUnitGroup": true, "otype": "float", "units": ["h", "m", "s"], "choices": [], "name": "Rate Adjust"}, {"description": "", "attribute": "compliance_adjust", "required": false, "hasUnitGroup": true, "otype": "float", "units": ["m", "c", "mm", "nm"], "choices": [], "name": "Compliance Adjust"}, {"description": "", "attribute": "acquisition_rate", "required": false, "hasUnitGroup": true, "otype": "float", "units": ["kHz"], "choices": [], "name": "Acquisition Rate"}, {"description": "", "attribute": "entry_target_temp", "required": false, "hasUnitGroup": true, "otype": "float", "units": ["f", "c"], "choices": [], "name": "Entry Target Temp"}, {"description": "", "attribute": "rate_to_target", "required": false, "hasUnitGroup": true, "otype": "float", "units": ["C/s", "K/s"], "choices": [], "name": "Rate to Target"}, {"description": "", "attribute": "exit_target_temp", "required": false, "hasUnitGroup": true, "otype": "float", "units": ["f", "c"], "choices": [], "name": "Exit Target Temp"}, {"description": "", "attribute": "soak_time___post_hit", "required": false, "hasUnitGroup": true, "otype": "float", "units": ["h", "m", "s"], "choices": [], "name": "Soak Time - Post Hit"}, {"description": "", "attribute": "quench_type___in_gleeble", "required": false, "choices": [{"name": "None", "value": "none"}, {"name": "Air", "value": "air"}, {"name": "Water", "value": "water"}], "otype": "selection", "units": [], "name": "Quench Type - in Gleeble"}, {"description": "", "attribute": "quench_type___external_to_gleeble", "required": false, "choices": [{"name": "None", "value": "none"}, {"name": "Air", "value": "air"}, {"name": "Water", "value": "water"}], "otype": "selection", "units": [], "name": "Quench Type - external to Gleeble"}]}], "measurements": [{"description": "", "attribute": "final_height", "required": false, "choices": [], "otype": "float", "units": [], "name": "Final Height"}, {"description": "", "attribute": "gleeble_true_strain", "required": false, "choices": [], "otype": "float", "units": ["percentage", "mm/mm"], "name": "Gleeble True Strain"}], "does_transform": true, "process_type": "transform", "owner": "tradiasa@umich.edu", "template_description": "Hot compression, thermomechanical simulation", "id": "global_Gleeble Thermomechanical Simulation", "name": "Gleeble Thermomechanical Simulation"}
+{
+    "can_edit": true, 
+    "process_name": "Gleeble Thermomechanical Simulation", 
+    "description": null, 
+    "setup": [
+        {
+            "attribute": "instrument", 
+            "name": "Instrument", 
+            "properties": [
+                {
+                    "description": "", 
+                    "attribute": "anvil", 
+                    "required": false, 
+                    "choices": [
+                        {
+                            "name": "Plane Strain", 
+                            "value": "plane_strain"
+                        }, 
+                        {
+                            "name": "Flow Stress", 
+                            "value": "flow_stress"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "name": "Anvil"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "sample_diameter", 
+                    "required": false, 
+                    "hasUnitGroup": true, 
+                    "otype": "float", 
+                    "units": [
+                        "m", 
+                        "c", 
+                        "mm", 
+                        "nm"
+                    ], 
+                    "choices": [], 
+                    "name": "Sample Diameter"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "program_strain_type", 
+                    "required": false, 
+                    "choices": [
+                        {
+                            "name": "Engineering Strain", 
+                            "value": "engineering_strain"
+                        }, 
+                        {
+                            "name": "True Strain", 
+                            "value": "true_strain"
+                        }, 
+                        {
+                            "name": "Percent Reduction", 
+                            "value": "percent_reduction"
+                        }, 
+                        {
+                            "name": "Deformation (mm)", 
+                            "value": "deformation_(mm)"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "name": "Program Strain Type"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "initial_thickness", 
+                    "required": false, 
+                    "hasUnitGroup": true, 
+                    "otype": "float", 
+                    "units": [
+                        "m", 
+                        "c", 
+                        "mm", 
+                        "nm"
+                    ], 
+                    "choices": [], 
+                    "name": "Initial Thickness"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "first_soak_temperature", 
+                    "required": false, 
+                    "hasUnitGroup": true, 
+                    "otype": "float", 
+                    "units": [
+                        "f", 
+                        "c"
+                    ], 
+                    "choices": [], 
+                    "name": "First Soak Temperature"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "rate_to_temp", 
+                    "required": false, 
+                    "hasUnitGroup": true, 
+                    "otype": "float", 
+                    "units": [
+                        "C/s", 
+                        "K/s"
+                    ], 
+                    "choices": [], 
+                    "name": "Rate to Temp"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "soak_time", 
+                    "required": false, 
+                    "hasUnitGroup": true, 
+                    "otype": "float", 
+                    "units": [
+                        "h", 
+                        "m", 
+                        "s"
+                    ], 
+                    "choices": [], 
+                    "name": "Soak Time"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "strain_rate", 
+                    "required": false, 
+                    "choices": [], 
+                    "otype": "float", 
+                    "units": [], 
+                    "name": "Strain Rate"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "strain", 
+                    "required": false, 
+                    "hasUnitGroup": true, 
+                    "otype": "float", 
+                    "units": [
+                        "percentage", 
+                        "mm/mm"
+                    ], 
+                    "choices": [], 
+                    "name": "Strain"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "dwell_time", 
+                    "required": false, 
+                    "hasUnitGroup": true, 
+                    "otype": "float", 
+                    "units": [
+                        "h", 
+                        "m", 
+                        "s"
+                    ], 
+                    "choices": [], 
+                    "name": "Dwell Time"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "rate_adjust", 
+                    "required": false, 
+                    "hasUnitGroup": true, 
+                    "otype": "float", 
+                    "units": [
+                        "h", 
+                        "m", 
+                        "s"
+                    ], 
+                    "choices": [], 
+                    "name": "Rate Adjust"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "compliance_adjust", 
+                    "required": false, 
+                    "hasUnitGroup": true, 
+                    "otype": "float", 
+                    "units": [
+                        "m", 
+                        "c", 
+                        "mm", 
+                        "nm"
+                    ], 
+                    "choices": [], 
+                    "name": "Compliance Adjust"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "acquisition_rate", 
+                    "required": false, 
+                    "hasUnitGroup": true, 
+                    "otype": "float", 
+                    "units": [
+                        "kHz"
+                    ], 
+                    "choices": [], 
+                    "name": "Acquisition Rate"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "entry_target_temp", 
+                    "required": false, 
+                    "hasUnitGroup": true, 
+                    "otype": "float", 
+                    "units": [
+                        "f", 
+                        "c"
+                    ], 
+                    "choices": [], 
+                    "name": "Entry Target Temp"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "rate_to_target", 
+                    "required": false, 
+                    "hasUnitGroup": true, 
+                    "otype": "float", 
+                    "units": [
+                        "C/s", 
+                        "K/s"
+                    ], 
+                    "choices": [], 
+                    "name": "Rate to Target"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "exit_target_temp", 
+                    "required": false, 
+                    "hasUnitGroup": true, 
+                    "otype": "float", 
+                    "units": [
+                        "f", 
+                        "c"
+                    ], 
+                    "choices": [], 
+                    "name": "Exit Target Temp"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "soak_time___post_hit", 
+                    "required": false, 
+                    "hasUnitGroup": true, 
+                    "otype": "float", 
+                    "units": [
+                        "h", 
+                        "m", 
+                        "s"
+                    ], 
+                    "choices": [], 
+                    "name": "Soak Time - Post Hit"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "quench_type___in_gleeble", 
+                    "required": false, 
+                    "choices": [
+                        {
+                            "name": "None", 
+                            "value": "none"
+                        }, 
+                        {
+                            "name": "Air", 
+                            "value": "air"
+                        }, 
+                        {
+                            "name": "Water", 
+                            "value": "water"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "name": "Quench Type - in Gleeble"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "quench_type___external_to_gleeble", 
+                    "required": false, 
+                    "choices": [
+                        {
+                            "name": "None", 
+                            "value": "none"
+                        }, 
+                        {
+                            "name": "Air", 
+                            "value": "air"
+                        }, 
+                        {
+                            "name": "Water", 
+                            "value": "water"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "name": "Quench Type - external to Gleeble"
+                }
+            ]
+        }
+    ], 
+    "measurements": [
+        {
+            "description": "", 
+            "attribute": "final_height", 
+            "required": false, 
+            "choices": [], 
+            "otype": "float", 
+            "units": [], 
+            "name": "Final Height"
+        }, 
+        {
+            "description": "", 
+            "attribute": "gleeble_true_strain", 
+            "required": false, 
+            "choices": [], 
+            "otype": "float", 
+            "units": [
+                "percentage", 
+                "mm/mm"
+            ], 
+            "name": "Gleeble True Strain"
+        }
+    ], 
+    "does_transform": true, 
+    "process_type": "transform", 
+    "owner": "tradiasa@umich.edu", 
+    "template_description": "Hot compression, thermomechanical simulation", 
+    "id": "global_Gleeble Thermomechanical Simulation", 
+    "name": "Gleeble Thermomechanical Simulation"
+}

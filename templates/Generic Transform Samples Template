@@ -1,1 +1,20 @@
-{"category": "", "process_name": "Generic Transform Samples Template", "description": "Generic Transform Samples Template", "setup": [{"attribute": "instrument", "name": "Instrument", "properties": []}], "measurements": [], "does_transform": true, "process_type": "transform", "otype": "template", "owner": "template-admin", "destructive": false, "id": "global_Generic Transform Samples Template", "name": "Generic Transform Samples Template"}
+{
+    "category": "", 
+    "process_name": "Generic Transform Samples Template", 
+    "description": "Generic Transform Samples Template", 
+    "setup": [
+        {
+            "attribute": "instrument", 
+            "name": "Instrument", 
+            "properties": []
+        }
+    ], 
+    "measurements": [], 
+    "does_transform": true, 
+    "process_type": "transform", 
+    "otype": "template", 
+    "owner": "template-admin", 
+    "destructive": false, 
+    "id": "global_Generic Transform Samples Template", 
+    "name": "Generic Transform Samples Template"
+}

@@ -1,1 +1,63 @@
-{"category": "create_sample", "process_name": "Cluster Expansion Effective Hamiltonian", "description": "Cluster Expansion Effective Hamiltonian", "setup": [{"attribute": "computation", "name": "Computation", "properties": []}], "measurements": [{"description": "", "attribute": "prim", "required": false, "value": {"sample_name": "", "sample_id": ""}, "choices": [], "otype": "sample", "units": [], "unit": "", "name": "Prim"}, {"description": "CASM bspecs.json file.", "attribute": "basis_function_specs", "required": false, "value": {"file_name": "", "file_id": ""}, "choices": [], "otype": "file", "units": [], "unit": "", "name": "Basis Function Specs"}, {"description": "CASM eci.json file.", "attribute": "effective_cluster_interactions", "required": false, "value": {"file_name": "", "file_id": ""}, "choices": [], "otype": "file", "units": [], "unit": "", "name": "Effective Cluster Interactions"}], "does_transform": true, "process_type": "create", "otype": "template", "owner": "template-admin", "destructive": false, "id": "global_Cluster Expansion Effective Hamiltonian", "name": "Cluster Expansion Effective Hamiltonian"}
+{
+    "category": "create_sample", 
+    "process_name": "Cluster Expansion Effective Hamiltonian", 
+    "description": "Cluster Expansion Effective Hamiltonian", 
+    "setup": [
+        {
+            "attribute": "computation", 
+            "name": "Computation", 
+            "properties": []
+        }
+    ], 
+    "measurements": [
+        {
+            "description": "", 
+            "attribute": "prim", 
+            "required": false, 
+            "value": {
+                "sample_name": "", 
+                "sample_id": ""
+            }, 
+            "choices": [], 
+            "otype": "sample", 
+            "units": [], 
+            "unit": "", 
+            "name": "Prim"
+        }, 
+        {
+            "description": "CASM bspecs.json file.", 
+            "attribute": "basis_function_specs", 
+            "required": false, 
+            "value": {
+                "file_name": "", 
+                "file_id": ""
+            }, 
+            "choices": [], 
+            "otype": "file", 
+            "units": [], 
+            "unit": "", 
+            "name": "Basis Function Specs"
+        }, 
+        {
+            "description": "CASM eci.json file.", 
+            "attribute": "effective_cluster_interactions", 
+            "required": false, 
+            "value": {
+                "file_name": "", 
+                "file_id": ""
+            }, 
+            "choices": [], 
+            "otype": "file", 
+            "units": [], 
+            "unit": "", 
+            "name": "Effective Cluster Interactions"
+        }
+    ], 
+    "does_transform": true, 
+    "process_type": "create", 
+    "otype": "template", 
+    "owner": "template-admin", 
+    "destructive": false, 
+    "id": "global_Cluster Expansion Effective Hamiltonian", 
+    "name": "Cluster Expansion Effective Hamiltonian"
+}

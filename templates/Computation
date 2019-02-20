@@ -1,1 +1,74 @@
-{"category": "", "process_name": "Computation", "description": "Computation", "setup": [{"attribute": "instrument", "name": "Instrument", "properties": [{"description": "", "attribute": "submit_script", "required": false, "value": "", "choices": [], "otype": "string", "units": [], "unit": "", "name": "Submit Script"}, {"description": "", "attribute": "number_of_processors", "required": false, "value": "", "choices": [], "otype": "number", "units": [], "unit": "", "name": "Number Of Processors"}, {"description": "", "attribute": "memory_per_processor", "required": false, "value": "", "choices": [], "otype": "number", "units": ["b", "kb", "mb", "gb"], "unit": "", "name": "Memory Per Processor"}, {"description": "", "attribute": "walltime", "required": false, "value": "", "choices": [], "otype": "number", "units": ["h", "m", "s"], "unit": "", "name": "Walltime"}]}], "measurements": [], "does_transform": false, "process_type": "analysis", "otype": "template", "owner": "template-admin", "destructive": false, "id": "global_Computation", "name": "Computation"}
+{
+    "category": "", 
+    "process_name": "Computation", 
+    "description": "Computation", 
+    "setup": [
+        {
+            "attribute": "instrument", 
+            "name": "Instrument", 
+            "properties": [
+                {
+                    "description": "", 
+                    "attribute": "submit_script", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "string", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Submit Script"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "number_of_processors", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Number Of Processors"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "memory_per_processor", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [
+                        "b", 
+                        "kb", 
+                        "mb", 
+                        "gb"
+                    ], 
+                    "unit": "", 
+                    "name": "Memory Per Processor"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "walltime", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [
+                        "h", 
+                        "m", 
+                        "s"
+                    ], 
+                    "unit": "", 
+                    "name": "Walltime"
+                }
+            ]
+        }
+    ], 
+    "measurements": [], 
+    "does_transform": false, 
+    "process_type": "analysis", 
+    "otype": "template", 
+    "owner": "template-admin", 
+    "destructive": false, 
+    "id": "global_Computation", 
+    "name": "Computation"
+}

@@ -1,1 +1,249 @@
-{"category": "create_sample", "process_name": "CPFE Samples", "description": "CPFE Samples", "setup": [{"attribute": "computation", "name": "Computation", "properties": []}], "measurements": [{"description": "", "attribute": "crystal_type", "required": false, "value": "", "choices": [{"name": "FCC", "value": "fcc"}, {"name": "BCC", "value": "bcc"}, {"name": "HCP", "value": "hcp"}], "otype": "selection", "units": [], "unit": "", "name": "Crystal Type"}, {"description": "", "attribute": "latent_hardening_ratio", "required": false, "value": "", "choices": [], "otype": "float", "units": [], "unit": "", "name": "Latent Hardening Ratio"}, {"description": "", "attribute": "number_of_slip_systems", "required": false, "value": "", "choices": [], "otype": "integer", "units": [], "unit": "", "name": "Number of Slip Systems"}, {"description": "Crtical resolved shear stress of slip systems", "attribute": "initial_slip_resistance", "required": false, "value": {"otype": "float", "dimensions": 0, "value": []}, "choices": [], "otype": "vector", "units": [], "unit": "Pa", "name": "Initial Slip Resistance"}, {"description": "Hardening moduli of slip systems", "attribute": "initial_hardening_modulus", "required": false, "value": {"otype": "float", "dimensions": 0, "value": []}, "choices": [], "otype": "vector", "units": [], "unit": "Pa", "name": "Initial Hardening Modulus"}, {"description": "Power law coefficient", "attribute": "power_law_exponent", "required": false, "value": {"otype": "float", "dimensions": 0, "value": []}, "choices": [], "otype": "vector", "units": [], "unit": "", "name": "Power Law Exponent"}, {"description": "Saturation stress", "attribute": "saturation_stress", "required": false, "value": {"otype": "float", "dimensions": 0, "value": []}, "choices": [], "otype": "vector", "units": [], "unit": "Pa", "name": "Saturation Stress"}, {"description": "", "attribute": "elastic_stiffness", "required": false, "value": {"otype": "float", "dimensions": [6, 6], "value": []}, "choices": [], "otype": "matrix", "units": [], "unit": "Pa", "name": "Elastic Stiffness"}, {"description": "", "attribute": "number_of_twin_systems", "required": false, "value": "", "choices": [], "otype": "integer", "units": [], "unit": "", "name": "Number of Twin Systems"}, {"description": "Critical resolved shear stress of twin systems", "attribute": "initial_twin_slip_resistance", "required": false, "value": {"otype": "float", "dimensions": 0, "value": []}, "choices": [], "otype": "vector", "units": [], "unit": "Pa", "name": "Initial Twin Slip Resistance"}, {"description": "Hardening moduli of twin systems", "attribute": "initial_twin_hardening_modulus", "required": false, "value": {"otype": "float", "dimensions": 0, "value": []}, "choices": [], "otype": "vector", "units": [], "unit": "Pa", "name": "Initial Twin Hardening Modulus"}, {"description": "Power law coefficient", "attribute": "twin_power_law_exponent", "required": false, "value": {"otype": "float", "dimensions": 0, "value": []}, "choices": [], "otype": "vector", "units": [], "unit": "", "name": "Twin Power Law Exponent"}, {"description": "Saturation stress", "attribute": "twin_saturation_stress", "required": false, "value": {"otype": "float", "dimensions": 0, "value": []}, "choices": [], "otype": "vector", "units": [], "unit": "Pa", "name": "Twin Saturation Stress"}, {"description": "Charateristic twin shear", "attribute": "twin_shear", "required": false, "value": "", "choices": [], "otype": "float", "units": [], "unit": "", "name": "Twin Shear"}, {"description": "Threshold fraction of characteristic twin shear", "attribute": "twin_threshold_fraction", "required": false, "value": "", "choices": [], "otype": "float", "units": [], "unit": "", "name": "Twin Threshold Fraction"}, {"description": "Twin growth saturation factor", "attribute": "twin_saturation_factor", "required": false, "value": "", "choices": [], "otype": "float", "units": [], "unit": "", "name": "Twin Saturation Factor"}], "does_transform": true, "process_type": "create", "otype": "template", "owner": "template-admin", "destructive": false, "id": "global_CPFE Samples", "name": "CPFE Samples"}
+{
+    "category": "create_sample", 
+    "process_name": "CPFE Samples", 
+    "description": "CPFE Samples", 
+    "setup": [
+        {
+            "attribute": "computation", 
+            "name": "Computation", 
+            "properties": []
+        }
+    ], 
+    "measurements": [
+        {
+            "description": "", 
+            "attribute": "crystal_type", 
+            "required": false, 
+            "value": "", 
+            "choices": [
+                {
+                    "name": "FCC", 
+                    "value": "fcc"
+                }, 
+                {
+                    "name": "BCC", 
+                    "value": "bcc"
+                }, 
+                {
+                    "name": "HCP", 
+                    "value": "hcp"
+                }
+            ], 
+            "otype": "selection", 
+            "units": [], 
+            "unit": "", 
+            "name": "Crystal Type"
+        }, 
+        {
+            "description": "", 
+            "attribute": "latent_hardening_ratio", 
+            "required": false, 
+            "value": "", 
+            "choices": [], 
+            "otype": "float", 
+            "units": [], 
+            "unit": "", 
+            "name": "Latent Hardening Ratio"
+        }, 
+        {
+            "description": "", 
+            "attribute": "number_of_slip_systems", 
+            "required": false, 
+            "value": "", 
+            "choices": [], 
+            "otype": "integer", 
+            "units": [], 
+            "unit": "", 
+            "name": "Number of Slip Systems"
+        }, 
+        {
+            "description": "Crtical resolved shear stress of slip systems", 
+            "attribute": "initial_slip_resistance", 
+            "required": false, 
+            "value": {
+                "otype": "float", 
+                "dimensions": 0, 
+                "value": []
+            }, 
+            "choices": [], 
+            "otype": "vector", 
+            "units": [], 
+            "unit": "Pa", 
+            "name": "Initial Slip Resistance"
+        }, 
+        {
+            "description": "Hardening moduli of slip systems", 
+            "attribute": "initial_hardening_modulus", 
+            "required": false, 
+            "value": {
+                "otype": "float", 
+                "dimensions": 0, 
+                "value": []
+            }, 
+            "choices": [], 
+            "otype": "vector", 
+            "units": [], 
+            "unit": "Pa", 
+            "name": "Initial Hardening Modulus"
+        }, 
+        {
+            "description": "Power law coefficient", 
+            "attribute": "power_law_exponent", 
+            "required": false, 
+            "value": {
+                "otype": "float", 
+                "dimensions": 0, 
+                "value": []
+            }, 
+            "choices": [], 
+            "otype": "vector", 
+            "units": [], 
+            "unit": "", 
+            "name": "Power Law Exponent"
+        }, 
+        {
+            "description": "Saturation stress", 
+            "attribute": "saturation_stress", 
+            "required": false, 
+            "value": {
+                "otype": "float", 
+                "dimensions": 0, 
+                "value": []
+            }, 
+            "choices": [], 
+            "otype": "vector", 
+            "units": [], 
+            "unit": "Pa", 
+            "name": "Saturation Stress"
+        }, 
+        {
+            "description": "", 
+            "attribute": "elastic_stiffness", 
+            "required": false, 
+            "value": {
+                "otype": "float", 
+                "dimensions": [
+                    6, 
+                    6
+                ], 
+                "value": []
+            }, 
+            "choices": [], 
+            "otype": "matrix", 
+            "units": [], 
+            "unit": "Pa", 
+            "name": "Elastic Stiffness"
+        }, 
+        {
+            "description": "", 
+            "attribute": "number_of_twin_systems", 
+            "required": false, 
+            "value": "", 
+            "choices": [], 
+            "otype": "integer", 
+            "units": [], 
+            "unit": "", 
+            "name": "Number of Twin Systems"
+        }, 
+        {
+            "description": "Critical resolved shear stress of twin systems", 
+            "attribute": "initial_twin_slip_resistance", 
+            "required": false, 
+            "value": {
+                "otype": "float", 
+                "dimensions": 0, 
+                "value": []
+            }, 
+            "choices": [], 
+            "otype": "vector", 
+            "units": [], 
+            "unit": "Pa", 
+            "name": "Initial Twin Slip Resistance"
+        }, 
+        {
+            "description": "Hardening moduli of twin systems", 
+            "attribute": "initial_twin_hardening_modulus", 
+            "required": false, 
+            "value": {
+                "otype": "float", 
+                "dimensions": 0, 
+                "value": []
+            }, 
+            "choices": [], 
+            "otype": "vector", 
+            "units": [], 
+            "unit": "Pa", 
+            "name": "Initial Twin Hardening Modulus"
+        }, 
+        {
+            "description": "Power law coefficient", 
+            "attribute": "twin_power_law_exponent", 
+            "required": false, 
+            "value": {
+                "otype": "float", 
+                "dimensions": 0, 
+                "value": []
+            }, 
+            "choices": [], 
+            "otype": "vector", 
+            "units": [], 
+            "unit": "", 
+            "name": "Twin Power Law Exponent"
+        }, 
+        {
+            "description": "Saturation stress", 
+            "attribute": "twin_saturation_stress", 
+            "required": false, 
+            "value": {
+                "otype": "float", 
+                "dimensions": 0, 
+                "value": []
+            }, 
+            "choices": [], 
+            "otype": "vector", 
+            "units": [], 
+            "unit": "Pa", 
+            "name": "Twin Saturation Stress"
+        }, 
+        {
+            "description": "Charateristic twin shear", 
+            "attribute": "twin_shear", 
+            "required": false, 
+            "value": "", 
+            "choices": [], 
+            "otype": "float", 
+            "units": [], 
+            "unit": "", 
+            "name": "Twin Shear"
+        }, 
+        {
+            "description": "Threshold fraction of characteristic twin shear", 
+            "attribute": "twin_threshold_fraction", 
+            "required": false, 
+            "value": "", 
+            "choices": [], 
+            "otype": "float", 
+            "units": [], 
+            "unit": "", 
+            "name": "Twin Threshold Fraction"
+        }, 
+        {
+            "description": "Twin growth saturation factor", 
+            "attribute": "twin_saturation_factor", 
+            "required": false, 
+            "value": "", 
+            "choices": [], 
+            "otype": "float", 
+            "units": [], 
+            "unit": "", 
+            "name": "Twin Saturation Factor"
+        }
+    ], 
+    "does_transform": true, 
+    "process_type": "create", 
+    "otype": "template", 
+    "owner": "template-admin", 
+    "destructive": false, 
+    "id": "global_CPFE Samples", 
+    "name": "CPFE Samples"
+}

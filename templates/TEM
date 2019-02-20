@@ -1,1 +1,168 @@
-{"category": "", "process_name": "TEM", "description": "TEM", "setup": [{"attribute": "instrument", "name": "Instrument", "properties": [{"description": "", "attribute": "voltage", "required": false, "value": "", "choices": [], "otype": "number", "units": ["kV", "V"], "unit": "", "name": "Voltage"}, {"description": "", "attribute": "mode", "required": false, "value": "", "choices": [{"name": "Diffraction Imaging", "value": "diffraction_imaging"}, {"name": "High Resolution Imaging", "value": "high_resolution_imaging"}, {"name": "Scanning z-contrast", "value": "scanning_z_contrast"}], "otype": "selection", "units": [], "unit": "", "name": "Mode"}, {"description": "", "attribute": "conventional_scanning", "required": false, "value": "", "choices": [{"name": "Yes", "value": "yes"}, {"name": "No", "value": "no"}], "otype": "selection", "units": [], "unit": "", "name": "Conventional Scanning"}, {"description": "", "attribute": "scanning", "required": false, "value": "", "choices": [{"name": "Bright Field", "value": "bright_field"}, {"name": "High Angle Angular Dark Field", "value": "high_angle_angular_dark_field"}, {"name": "Tilt Series", "value": "tilt_series"}], "otype": "selection", "units": [], "unit": "", "name": "Scanning"}, {"description": "", "attribute": "stage", "required": false, "value": "", "choices": [{"name": "Standard", "value": "standard"}, {"name": "Cryo", "value": "cryo"}, {"name": "Heating", "value": "heating"}, {"name": "Other", "value": "other"}], "otype": "selection", "units": [], "unit": "", "name": "Stage"}, {"description": "", "attribute": "apparatus", "required": false, "value": "", "choices": [], "otype": "string", "units": [], "unit": "", "name": "Apparatus"}, {"description": "", "attribute": "spot_size", "required": false, "value": "", "choices": [], "otype": "number", "units": [], "unit": "", "name": "Spot Size"}, {"description": "", "attribute": "camera_length", "required": false, "value": "", "choices": [], "otype": "number", "units": ["cm", "mm", "m"], "unit": "", "name": "Camera Length"}]}], "measurements": [], "does_transform": false, "process_type": "measurement", "otype": "template", "owner": "template-admin", "destructive": false, "id": "global_TEM", "name": "TEM"}
+{
+    "category": "", 
+    "process_name": "TEM", 
+    "description": "TEM", 
+    "setup": [
+        {
+            "attribute": "instrument", 
+            "name": "Instrument", 
+            "properties": [
+                {
+                    "description": "", 
+                    "attribute": "voltage", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [
+                        "kV", 
+                        "V"
+                    ], 
+                    "unit": "", 
+                    "name": "Voltage"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "mode", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [
+                        {
+                            "name": "Diffraction Imaging", 
+                            "value": "diffraction_imaging"
+                        }, 
+                        {
+                            "name": "High Resolution Imaging", 
+                            "value": "high_resolution_imaging"
+                        }, 
+                        {
+                            "name": "Scanning z-contrast", 
+                            "value": "scanning_z_contrast"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Mode"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "conventional_scanning", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [
+                        {
+                            "name": "Yes", 
+                            "value": "yes"
+                        }, 
+                        {
+                            "name": "No", 
+                            "value": "no"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Conventional Scanning"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "scanning", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [
+                        {
+                            "name": "Bright Field", 
+                            "value": "bright_field"
+                        }, 
+                        {
+                            "name": "High Angle Angular Dark Field", 
+                            "value": "high_angle_angular_dark_field"
+                        }, 
+                        {
+                            "name": "Tilt Series", 
+                            "value": "tilt_series"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Scanning"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "stage", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [
+                        {
+                            "name": "Standard", 
+                            "value": "standard"
+                        }, 
+                        {
+                            "name": "Cryo", 
+                            "value": "cryo"
+                        }, 
+                        {
+                            "name": "Heating", 
+                            "value": "heating"
+                        }, 
+                        {
+                            "name": "Other", 
+                            "value": "other"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Stage"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "apparatus", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "string", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Apparatus"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "spot_size", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Spot Size"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "camera_length", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [
+                        "cm", 
+                        "mm", 
+                        "m"
+                    ], 
+                    "unit": "", 
+                    "name": "Camera Length"
+                }
+            ]
+        }
+    ], 
+    "measurements": [], 
+    "does_transform": false, 
+    "process_type": "measurement", 
+    "otype": "template", 
+    "owner": "template-admin", 
+    "destructive": false, 
+    "id": "global_TEM", 
+    "name": "TEM"
+}

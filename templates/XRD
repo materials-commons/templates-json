@@ -1,1 +1,76 @@
-{"category": "", "process_name": "XRD", "description": "XRD", "setup": [{"attribute": "instrument", "name": "Instrument", "properties": [{"description": "", "attribute": "type", "required": false, "value": "", "choices": [], "otype": "string", "units": [], "unit": "", "name": "Type"}, {"description": "", "attribute": "start_angle", "required": false, "value": "", "choices": [], "otype": "number", "units": [], "unit": "degrees", "name": "Start Angle"}, {"description": "", "attribute": "end_angle", "required": false, "value": "", "choices": [], "otype": "number", "units": [], "unit": "degrees", "name": "End Angle"}, {"description": "", "attribute": "rate", "required": false, "value": "", "choices": [], "otype": "number", "units": [], "unit": "degrees/minute", "name": "Rate"}, {"description": "", "attribute": "step_size", "required": false, "value": "", "choices": [], "otype": "number", "units": [], "unit": "degrees", "name": "Step Size"}]}], "measurements": [], "does_transform": true, "process_type": "transform", "otype": "template", "owner": "template-admin", "destructive": false, "id": "global_XRD", "name": "XRD"}
+{
+    "category": "", 
+    "process_name": "XRD", 
+    "description": "XRD", 
+    "setup": [
+        {
+            "attribute": "instrument", 
+            "name": "Instrument", 
+            "properties": [
+                {
+                    "description": "", 
+                    "attribute": "type", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "string", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Type"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "start_angle", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [], 
+                    "unit": "degrees", 
+                    "name": "Start Angle"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "end_angle", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [], 
+                    "unit": "degrees", 
+                    "name": "End Angle"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "rate", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [], 
+                    "unit": "degrees/minute", 
+                    "name": "Rate"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "step_size", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [], 
+                    "unit": "degrees", 
+                    "name": "Step Size"
+                }
+            ]
+        }
+    ], 
+    "measurements": [], 
+    "does_transform": true, 
+    "process_type": "transform", 
+    "otype": "template", 
+    "owner": "template-admin", 
+    "destructive": false, 
+    "id": "global_XRD", 
+    "name": "XRD"
+}

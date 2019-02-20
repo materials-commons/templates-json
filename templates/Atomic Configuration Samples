@@ -1,1 +1,276 @@
-{"category": "create_sample", "process_name": "Atomic Configuration Samples", "description": "Atomic Configuration Samples", "setup": [{"attribute": "computation", "name": "Computation", "properties": []}], "measurements": [{"description": "", "attribute": "name", "required": false, "value": "", "choices": [], "otype": "string", "units": [], "unit": "", "name": "Name"}, {"description": "Lattice vectores, respresented as columns of a matrix", "attribute": "lattice", "required": false, "value": {"otype": "float", "dimensions": [3, 3], "value": []}, "choices": [], "otype": "matrix", "units": [], "unit": "", "name": "Lattice"}, {"description": "Lattice parameters as[a, b, c, alpha, beta, gamma]", "attribute": "parameters", "required": false, "value": {"otype": "float", "dimensions": 6, "value": []}, "choices": [], "otype": "vector", "units": [], "unit": "", "name": "Parameters"}, {"description": "", "attribute": "lattice_system", "required": false, "value": "", "choices": [{"name": "Triclinic", "value": "triclinic"}, {"name": "Monoclinic", "value": "monoclinic"}, {"name": "Orthorhombic", "value": "orthorhombic"}, {"name": "Tetragonal", "value": "tetragonal"}, {"name": "Hexagonal", "value": "hexagonal"}, {"name": "Rhombohedral", "value": "rhombohedral"}, {"name": "Cubic", "value": "cubic"}], "otype": "selection", "units": [], "unit": "", "name": "Lattice System"}, {"description": "Schonflies symbol", "attribute": "symmetry", "required": false, "value": "", "choices": [], "otype": "string", "units": [], "unit": "", "name": "Symmetry"}, {"description": "", "attribute": "crystallographic_file", "required": false, "value": {"file_name": "", "file_id": ""}, "choices": [], "otype": "file", "units": [], "unit": "", "name": "Crystallographic File"}, {"description": "", "attribute": "schonflies_space_group_symbol", "required": false, "value": "", "choices": [], "otype": "string", "units": [], "unit": "", "name": "Schonflies Space Group Symbol"}, {"description": "", "attribute": "hermann_mauguin_space_group_symbol", "required": false, "value": "", "choices": [], "otype": "string", "units": [], "unit": "", "name": "Hermann-Mauguin Space Group Symbol"}, {"description": "International Union of Crytallography space group number", "attribute": "space_group_number", "required": false, "value": "", "choices": [], "otype": "integer", "units": [], "unit": "", "name": "Space Group Number"}, {"description": "", "attribute": "crystal_family", "required": false, "value": "", "choices": [{"name": "Triclinic", "value": "triclinic"}, {"name": "Monoclinic", "value": "monoclinic"}, {"name": "Orthorhombic", "value": "orthorhombic"}, {"name": "Tetragonal", "value": "tetragonal"}, {"name": "Hexagonal", "value": "hexagonal"}, {"name": "Cubic", "value": "cubic"}], "otype": "selection", "units": [], "unit": "", "name": "Crystal Family"}, {"description": "", "attribute": "crystal_system", "required": false, "value": "", "choices": [{"name": "Triclinic", "value": "triclinic"}, {"name": "Monoclinic", "value": "monoclinic"}, {"name": "Orthorhombic", "value": "orthorhombic"}, {"name": "Tetragonal", "value": "tetragonal"}, {"name": "Hexagonal", "value": "hexagonal"}, {"name": "Trigonal", "value": "trigonal"}, {"name": "Cubic", "value": "cubic"}], "otype": "selection", "units": [], "unit": "", "name": "Crystal System"}, {"description": "Usually length of Elements.", "attribute": "number_of_elements", "required": false, "value": "", "choices": [], "otype": "integer", "units": [], "unit": "", "name": "Number Of Elements"}, {"description": "", "attribute": "elements", "required": false, "value": [], "choices": [], "otype": "composition", "units": ["at%", "wt%", "atoms"], "unit": "", "name": "Elements"}, {"description": "", "attribute": "number_of_atoms", "required": false, "value": "", "choices": [], "otype": "integer", "units": [], "unit": "", "name": "Number Of Atoms"}], "does_transform": true, "process_type": "create", "otype": "template", "owner": "template-admin", "destructive": false, "id": "global_Atomic Configuration Samples", "name": "Atomic Configuration Samples"}
+{
+    "category": "create_sample", 
+    "process_name": "Atomic Configuration Samples", 
+    "description": "Atomic Configuration Samples", 
+    "setup": [
+        {
+            "attribute": "computation", 
+            "name": "Computation", 
+            "properties": []
+        }
+    ], 
+    "measurements": [
+        {
+            "description": "", 
+            "attribute": "name", 
+            "required": false, 
+            "value": "", 
+            "choices": [], 
+            "otype": "string", 
+            "units": [], 
+            "unit": "", 
+            "name": "Name"
+        }, 
+        {
+            "description": "Lattice vectores, respresented as columns of a matrix", 
+            "attribute": "lattice", 
+            "required": false, 
+            "value": {
+                "otype": "float", 
+                "dimensions": [
+                    3, 
+                    3
+                ], 
+                "value": []
+            }, 
+            "choices": [], 
+            "otype": "matrix", 
+            "units": [], 
+            "unit": "", 
+            "name": "Lattice"
+        }, 
+        {
+            "description": "Lattice parameters as[a, b, c, alpha, beta, gamma]", 
+            "attribute": "parameters", 
+            "required": false, 
+            "value": {
+                "otype": "float", 
+                "dimensions": 6, 
+                "value": []
+            }, 
+            "choices": [], 
+            "otype": "vector", 
+            "units": [], 
+            "unit": "", 
+            "name": "Parameters"
+        }, 
+        {
+            "description": "", 
+            "attribute": "lattice_system", 
+            "required": false, 
+            "value": "", 
+            "choices": [
+                {
+                    "name": "Triclinic", 
+                    "value": "triclinic"
+                }, 
+                {
+                    "name": "Monoclinic", 
+                    "value": "monoclinic"
+                }, 
+                {
+                    "name": "Orthorhombic", 
+                    "value": "orthorhombic"
+                }, 
+                {
+                    "name": "Tetragonal", 
+                    "value": "tetragonal"
+                }, 
+                {
+                    "name": "Hexagonal", 
+                    "value": "hexagonal"
+                }, 
+                {
+                    "name": "Rhombohedral", 
+                    "value": "rhombohedral"
+                }, 
+                {
+                    "name": "Cubic", 
+                    "value": "cubic"
+                }
+            ], 
+            "otype": "selection", 
+            "units": [], 
+            "unit": "", 
+            "name": "Lattice System"
+        }, 
+        {
+            "description": "Schonflies symbol", 
+            "attribute": "symmetry", 
+            "required": false, 
+            "value": "", 
+            "choices": [], 
+            "otype": "string", 
+            "units": [], 
+            "unit": "", 
+            "name": "Symmetry"
+        }, 
+        {
+            "description": "", 
+            "attribute": "crystallographic_file", 
+            "required": false, 
+            "value": {
+                "file_name": "", 
+                "file_id": ""
+            }, 
+            "choices": [], 
+            "otype": "file", 
+            "units": [], 
+            "unit": "", 
+            "name": "Crystallographic File"
+        }, 
+        {
+            "description": "", 
+            "attribute": "schonflies_space_group_symbol", 
+            "required": false, 
+            "value": "", 
+            "choices": [], 
+            "otype": "string", 
+            "units": [], 
+            "unit": "", 
+            "name": "Schonflies Space Group Symbol"
+        }, 
+        {
+            "description": "", 
+            "attribute": "hermann_mauguin_space_group_symbol", 
+            "required": false, 
+            "value": "", 
+            "choices": [], 
+            "otype": "string", 
+            "units": [], 
+            "unit": "", 
+            "name": "Hermann-Mauguin Space Group Symbol"
+        }, 
+        {
+            "description": "International Union of Crytallography space group number", 
+            "attribute": "space_group_number", 
+            "required": false, 
+            "value": "", 
+            "choices": [], 
+            "otype": "integer", 
+            "units": [], 
+            "unit": "", 
+            "name": "Space Group Number"
+        }, 
+        {
+            "description": "", 
+            "attribute": "crystal_family", 
+            "required": false, 
+            "value": "", 
+            "choices": [
+                {
+                    "name": "Triclinic", 
+                    "value": "triclinic"
+                }, 
+                {
+                    "name": "Monoclinic", 
+                    "value": "monoclinic"
+                }, 
+                {
+                    "name": "Orthorhombic", 
+                    "value": "orthorhombic"
+                }, 
+                {
+                    "name": "Tetragonal", 
+                    "value": "tetragonal"
+                }, 
+                {
+                    "name": "Hexagonal", 
+                    "value": "hexagonal"
+                }, 
+                {
+                    "name": "Cubic", 
+                    "value": "cubic"
+                }
+            ], 
+            "otype": "selection", 
+            "units": [], 
+            "unit": "", 
+            "name": "Crystal Family"
+        }, 
+        {
+            "description": "", 
+            "attribute": "crystal_system", 
+            "required": false, 
+            "value": "", 
+            "choices": [
+                {
+                    "name": "Triclinic", 
+                    "value": "triclinic"
+                }, 
+                {
+                    "name": "Monoclinic", 
+                    "value": "monoclinic"
+                }, 
+                {
+                    "name": "Orthorhombic", 
+                    "value": "orthorhombic"
+                }, 
+                {
+                    "name": "Tetragonal", 
+                    "value": "tetragonal"
+                }, 
+                {
+                    "name": "Hexagonal", 
+                    "value": "hexagonal"
+                }, 
+                {
+                    "name": "Trigonal", 
+                    "value": "trigonal"
+                }, 
+                {
+                    "name": "Cubic", 
+                    "value": "cubic"
+                }
+            ], 
+            "otype": "selection", 
+            "units": [], 
+            "unit": "", 
+            "name": "Crystal System"
+        }, 
+        {
+            "description": "Usually length of Elements.", 
+            "attribute": "number_of_elements", 
+            "required": false, 
+            "value": "", 
+            "choices": [], 
+            "otype": "integer", 
+            "units": [], 
+            "unit": "", 
+            "name": "Number Of Elements"
+        }, 
+        {
+            "description": "", 
+            "attribute": "elements", 
+            "required": false, 
+            "value": [], 
+            "choices": [], 
+            "otype": "composition", 
+            "units": [
+                "at%", 
+                "wt%", 
+                "atoms"
+            ], 
+            "unit": "", 
+            "name": "Elements"
+        }, 
+        {
+            "description": "", 
+            "attribute": "number_of_atoms", 
+            "required": false, 
+            "value": "", 
+            "choices": [], 
+            "otype": "integer", 
+            "units": [], 
+            "unit": "", 
+            "name": "Number Of Atoms"
+        }
+    ], 
+    "does_transform": true, 
+    "process_type": "create", 
+    "otype": "template", 
+    "owner": "template-admin", 
+    "destructive": false, 
+    "id": "global_Atomic Configuration Samples", 
+    "name": "Atomic Configuration Samples"
+}

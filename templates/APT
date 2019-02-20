@@ -1,1 +1,193 @@
-{"category": "", "process_name": "APT", "description": "Atom Probe Tomography", "setup": [{"attribute": "instrument", "name": "Instrument", "properties": [{"description": "", "attribute": "mode", "required": false, "value": "", "choices": [{"name": "FIM", "value": "fim"}, {"name": "Voltage", "value": "voltage"}, {"name": "Laser", "value": "laser"}], "otype": "selection", "units": [], "unit": "", "name": "Mode"}, {"description": "", "attribute": "specimen_temperature", "required": false, "value": "", "choices": [], "otype": "number", "units": ["K", "F", "C"], "unit": "", "name": "Specimen Temperature"}, {"description": "", "attribute": "voltage_pulse_fraction", "required": false, "value": "", "choices": [], "otype": "number", "units": [], "unit": "percentage", "name": "Voltage Pulse Fraction"}, {"description": "", "attribute": "laser_pulse_energy", "required": false, "value": "", "choices": [], "otype": "number", "units": ["pJ", "nJ"], "unit": "", "name": "Laser Pulse Energy"}, {"description": "", "attribute": "laser_wavelength", "required": false, "value": "", "choices": [], "otype": "number", "units": [], "unit": "nm", "name": "Laser Wavelength"}, {"description": "", "attribute": "pulse_frequency", "required": false, "value": "", "choices": [], "otype": "number", "units": [], "unit": "kHz", "name": "Pulse Frequency"}, {"description": "", "attribute": "evaporation_control", "required": false, "value": "", "choices": [{"name": "Constant Detector Rate", "value": "constant_detector_rate"}, {"name": "Constant Evaporation Rate", "value": "constant_evaporation_rate"}, {"name": "Constant Charge Rate Ratio", "value": "constant_charge_rate_ratio"}, {"name": "Other", "value": "other"}], "otype": "selection", "units": [], "unit": "", "name": "Evaporation Control"}, {"description": "", "attribute": "evaporation_rate", "required": false, "value": "", "choices": [], "otype": "number", "units": [], "unit": "Atom/Pulse", "name": "Evaporation Rate"}, {"description": "", "attribute": "imaging_gas", "required": false, "value": "", "choices": [{"name": "He", "value": "he"}, {"name": "Ar", "value": "ar"}, {"name": "Ne", "value": "ne"}, {"name": "Other", "value": "other"}, {"name": "None", "value": "none"}], "otype": "selection", "units": [], "unit": "", "name": "Imaging Gas"}, {"description": "", "attribute": "pressure", "required": false, "value": "", "choices": [], "otype": "number", "units": ["atm", "Pa", "torr"], "unit": "", "name": "Pressure"}]}], "measurements": [], "does_transform": false, "process_type": "measurement", "otype": "template", "owner": "template-admin", "destructive": false, "id": "global_APT", "name": "APT"}
+{
+    "category": "", 
+    "process_name": "APT", 
+    "description": "Atom Probe Tomography", 
+    "setup": [
+        {
+            "attribute": "instrument", 
+            "name": "Instrument", 
+            "properties": [
+                {
+                    "description": "", 
+                    "attribute": "mode", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [
+                        {
+                            "name": "FIM", 
+                            "value": "fim"
+                        }, 
+                        {
+                            "name": "Voltage", 
+                            "value": "voltage"
+                        }, 
+                        {
+                            "name": "Laser", 
+                            "value": "laser"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Mode"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "specimen_temperature", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [
+                        "K", 
+                        "F", 
+                        "C"
+                    ], 
+                    "unit": "", 
+                    "name": "Specimen Temperature"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "voltage_pulse_fraction", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [], 
+                    "unit": "percentage", 
+                    "name": "Voltage Pulse Fraction"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "laser_pulse_energy", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [
+                        "pJ", 
+                        "nJ"
+                    ], 
+                    "unit": "", 
+                    "name": "Laser Pulse Energy"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "laser_wavelength", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [], 
+                    "unit": "nm", 
+                    "name": "Laser Wavelength"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "pulse_frequency", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [], 
+                    "unit": "kHz", 
+                    "name": "Pulse Frequency"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "evaporation_control", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [
+                        {
+                            "name": "Constant Detector Rate", 
+                            "value": "constant_detector_rate"
+                        }, 
+                        {
+                            "name": "Constant Evaporation Rate", 
+                            "value": "constant_evaporation_rate"
+                        }, 
+                        {
+                            "name": "Constant Charge Rate Ratio", 
+                            "value": "constant_charge_rate_ratio"
+                        }, 
+                        {
+                            "name": "Other", 
+                            "value": "other"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Evaporation Control"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "evaporation_rate", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [], 
+                    "unit": "Atom/Pulse", 
+                    "name": "Evaporation Rate"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "imaging_gas", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [
+                        {
+                            "name": "He", 
+                            "value": "he"
+                        }, 
+                        {
+                            "name": "Ar", 
+                            "value": "ar"
+                        }, 
+                        {
+                            "name": "Ne", 
+                            "value": "ne"
+                        }, 
+                        {
+                            "name": "Other", 
+                            "value": "other"
+                        }, 
+                        {
+                            "name": "None", 
+                            "value": "none"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Imaging Gas"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "pressure", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [
+                        "atm", 
+                        "Pa", 
+                        "torr"
+                    ], 
+                    "unit": "", 
+                    "name": "Pressure"
+                }
+            ]
+        }
+    ], 
+    "measurements": [], 
+    "does_transform": false, 
+    "process_type": "measurement", 
+    "otype": "template", 
+    "owner": "template-admin", 
+    "destructive": false, 
+    "id": "global_APT", 
+    "name": "APT"
+}

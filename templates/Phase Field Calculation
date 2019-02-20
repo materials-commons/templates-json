@@ -1,1 +1,301 @@
-{"category": "", "process_name": "Phase Field Calculation", "description": "Phase Field Calculation", "setup": [{"attribute": "computation", "name": "Computation", "properties": [{"description": "", "attribute": "fe_basis_order", "required": false, "value": "", "choices": [], "otype": "integer", "units": [], "unit": "", "name": "FE Basis Order"}, {"description": "", "attribute": "fe_basis_quadrature_order", "required": false, "value": "", "choices": [], "otype": "integer", "units": [], "unit": "", "name": "FE Basis Quadrature Order"}, {"description": "", "attribute": "mesh_filename", "required": false, "value": "", "choices": [], "otype": "string", "units": [], "unit": "", "name": "Mesh Filename"}, {"description": "", "attribute": "mesh_dimension", "required": false, "value": "", "choices": [], "otype": "number", "units": [], "unit": "", "name": "Mesh Dimension"}, {"description": "A vector of float with length equal to calculation dimension, giving the distance span.", "attribute": "mesh", "required": false, "value": {"otype": "float", "dimensions": 0, "value": []}, "choices": [], "otype": "vector", "units": [], "unit": "", "name": "Mesh"}, {"description": "A vector of integer with length equal to calculation dimension, giving the number of mesh subdivisions along each dimension.", "attribute": "mesh", "required": false, "value": {"otype": "integer", "dimensions": 0, "value": []}, "choices": [], "otype": "vector", "units": [], "unit": "", "name": "Mesh"}, {"description": "Initial mesh refinement factor of each subdivision", "attribute": "mesh_initial_refinement_factor", "required": false, "value": "", "choices": [], "otype": "integer", "units": [], "unit": "", "name": "Mesh Initial Refinement Factor"}, {"description": "", "attribute": "mesh_adaptivity_max_refinement_factor", "required": false, "value": "", "choices": [], "otype": "integer", "units": [], "unit": "", "name": "Mesh Adaptivity Max Refinement Factor"}, {"description": "", "attribute": "mesh_adaptivity_min_refinement_factor", "required": false, "value": "", "choices": [], "otype": "integer", "units": [], "unit": "", "name": "Mesh Adaptivity Min Refinement Factor"}, {"description": "Indices or names of fields that control refinement.", "attribute": "mesh_adaptivity_refinement_criteria", "required": false, "value": "", "choices": [], "otype": "string", "units": [], "unit": "", "name": "Mesh Adaptivity Refinement Criteria"}, {"description": "", "attribute": "mesh_adaptivity_refinement_type", "required": false, "value": "", "choices": [{"name": "Window", "value": "window"}, {"name": "Ellipsoidal Shell", "value": "ellipsoidal_shell"}], "otype": "selection", "units": [], "unit": "", "name": "Mesh Adaptivity Refinement Type"}, {"description": "", "attribute": "mesh_adaptivity_window_refinement_max", "required": false, "value": "", "choices": [], "otype": "float", "units": [], "unit": "", "name": "Mesh Adaptivity Window Refinement Max"}, {"description": "", "attribute": "mesh_adaptivity_window_refinement_min", "required": false, "value": "", "choices": [], "otype": "float", "units": [], "unit": "", "name": "Mesh Adaptivity Window Refinement Min"}, {"description": "", "attribute": "mesh_adaptivity_ellipsoid_center", "required": false, "value": {"otype": "float", "dimensions": 0, "value": []}, "choices": [], "otype": "vector", "units": [], "unit": "", "name": "Mesh Adaptivity Ellipsoid Center"}, {"description": "", "attribute": "mesh_adaptivity_inner_semi_axes", "required": false, "value": {"otype": "float", "dimensions": 0, "value": []}, "choices": [], "otype": "vector", "units": [], "unit": "", "name": "Mesh Adaptivity Inner Semi-Axes"}, {"description": "", "attribute": "mesh_adaptivity_outer_semi_axes", "required": false, "value": {"otype": "float", "dimensions": 0, "value": []}, "choices": [], "otype": "vector", "units": [], "unit": "", "name": "Mesh Adaptivity Outer Semi-Axes"}, {"description": "", "attribute": "mesh_adaptivity_skip_remeshing_steps", "required": false, "value": "", "choices": [], "otype": "integer", "units": [], "unit": "", "name": "Mesh Adaptivity Skip Remeshing Steps"}, {"description": "", "attribute": "mechanics_solver_type", "required": false, "value": "", "choices": [], "otype": "string", "units": [], "unit": "", "name": "Mechanics Solver Type"}, {"description": "", "attribute": "mechanics_solver_preconditioner_type", "required": false, "value": "", "choices": [], "otype": "string", "units": [], "unit": "", "name": "Mechanics Solver Preconditioner Type"}, {"description": "", "attribute": "mechanics_solver_tolerance_type", "required": false, "value": "", "choices": [{"name": "Relative", "value": "relative"}, {"name": "Absolute", "value": "absolute"}], "otype": "selection", "units": [], "unit": "", "name": "Mechanics Solver Tolerance Type"}, {"description": "", "attribute": "mechanics_solver_tolerance", "required": false, "value": "", "choices": [], "otype": "float", "units": [], "unit": "", "name": "Mechanics Solver Tolerance"}, {"description": "", "attribute": "mechanics_solver_max_iterations", "required": false, "value": "", "choices": [], "otype": "integer", "units": [], "unit": "", "name": "Mechanics Solver Max Iterations"}]}], "measurements": [], "does_transform": false, "process_type": "analysis", "otype": "template", "owner": "template-admin", "destructive": false, "id": "global_Phase Field Calculation", "name": "Phase Field Calculation"}
+{
+    "category": "", 
+    "process_name": "Phase Field Calculation", 
+    "description": "Phase Field Calculation", 
+    "setup": [
+        {
+            "attribute": "computation", 
+            "name": "Computation", 
+            "properties": [
+                {
+                    "description": "", 
+                    "attribute": "fe_basis_order", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "integer", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "FE Basis Order"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "fe_basis_quadrature_order", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "integer", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "FE Basis Quadrature Order"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "mesh_filename", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "string", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Mesh Filename"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "mesh_dimension", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Mesh Dimension"
+                }, 
+                {
+                    "description": "A vector of float with length equal to calculation dimension, giving the distance span.", 
+                    "attribute": "mesh", 
+                    "required": false, 
+                    "value": {
+                        "otype": "float", 
+                        "dimensions": 0, 
+                        "value": []
+                    }, 
+                    "choices": [], 
+                    "otype": "vector", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Mesh"
+                }, 
+                {
+                    "description": "A vector of integer with length equal to calculation dimension, giving the number of mesh subdivisions along each dimension.", 
+                    "attribute": "mesh", 
+                    "required": false, 
+                    "value": {
+                        "otype": "integer", 
+                        "dimensions": 0, 
+                        "value": []
+                    }, 
+                    "choices": [], 
+                    "otype": "vector", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Mesh"
+                }, 
+                {
+                    "description": "Initial mesh refinement factor of each subdivision", 
+                    "attribute": "mesh_initial_refinement_factor", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "integer", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Mesh Initial Refinement Factor"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "mesh_adaptivity_max_refinement_factor", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "integer", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Mesh Adaptivity Max Refinement Factor"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "mesh_adaptivity_min_refinement_factor", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "integer", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Mesh Adaptivity Min Refinement Factor"
+                }, 
+                {
+                    "description": "Indices or names of fields that control refinement.", 
+                    "attribute": "mesh_adaptivity_refinement_criteria", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "string", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Mesh Adaptivity Refinement Criteria"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "mesh_adaptivity_refinement_type", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [
+                        {
+                            "name": "Window", 
+                            "value": "window"
+                        }, 
+                        {
+                            "name": "Ellipsoidal Shell", 
+                            "value": "ellipsoidal_shell"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Mesh Adaptivity Refinement Type"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "mesh_adaptivity_window_refinement_max", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "float", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Mesh Adaptivity Window Refinement Max"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "mesh_adaptivity_window_refinement_min", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "float", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Mesh Adaptivity Window Refinement Min"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "mesh_adaptivity_ellipsoid_center", 
+                    "required": false, 
+                    "value": {
+                        "otype": "float", 
+                        "dimensions": 0, 
+                        "value": []
+                    }, 
+                    "choices": [], 
+                    "otype": "vector", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Mesh Adaptivity Ellipsoid Center"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "mesh_adaptivity_inner_semi_axes", 
+                    "required": false, 
+                    "value": {
+                        "otype": "float", 
+                        "dimensions": 0, 
+                        "value": []
+                    }, 
+                    "choices": [], 
+                    "otype": "vector", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Mesh Adaptivity Inner Semi-Axes"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "mesh_adaptivity_outer_semi_axes", 
+                    "required": false, 
+                    "value": {
+                        "otype": "float", 
+                        "dimensions": 0, 
+                        "value": []
+                    }, 
+                    "choices": [], 
+                    "otype": "vector", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Mesh Adaptivity Outer Semi-Axes"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "mesh_adaptivity_skip_remeshing_steps", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "integer", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Mesh Adaptivity Skip Remeshing Steps"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "mechanics_solver_type", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "string", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Mechanics Solver Type"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "mechanics_solver_preconditioner_type", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "string", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Mechanics Solver Preconditioner Type"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "mechanics_solver_tolerance_type", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [
+                        {
+                            "name": "Relative", 
+                            "value": "relative"
+                        }, 
+                        {
+                            "name": "Absolute", 
+                            "value": "absolute"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Mechanics Solver Tolerance Type"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "mechanics_solver_tolerance", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "float", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Mechanics Solver Tolerance"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "mechanics_solver_max_iterations", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "integer", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Mechanics Solver Max Iterations"
+                }
+            ]
+        }
+    ], 
+    "measurements": [], 
+    "does_transform": false, 
+    "process_type": "analysis", 
+    "otype": "template", 
+    "owner": "template-admin", 
+    "destructive": false, 
+    "id": "global_Phase Field Calculation", 
+    "name": "Phase Field Calculation"
+}

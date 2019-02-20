@@ -1,1 +1,180 @@
-{"can_edit": true, "process_name": "DEFORM Simulation", "description": "", "setup": [{"attribute": "instrument", "name": "Instrument", "properties": [{"description": "", "attribute": "simulation_title", "required": false, "choices": [], "otype": "string", "units": [], "name": "Simulation Title"}, {"description": "", "attribute": "workpiece_geometry_and_deformation_description", "required": false, "choices": [], "otype": "string", "units": [], "name": "Workpiece Geometry and Deformation Description"}, {"description": "", "attribute": "increment_displacement_step", "required": false, "choices": [], "otype": "string", "units": [], "name": "Increment Displacement Step"}, {"description": "", "attribute": "total_simulation_steps", "required": false, "choices": [], "otype": "string", "units": [], "name": "Total Simulation Steps"}, {"description": "", "attribute": "workpiece_material", "required": false, "choices": [], "otype": "string", "units": [], "name": "Workpiece Material"}, {"description": "", "attribute": "workpiece_material_data_(stress_strain_data)", "required": false, "choices": [{"name": "Built-in Library", "value": "built_in_library"}, {"name": "User-defined Data", "value": "user_defined_data"}], "otype": "selection", "units": [], "name": "Workpiece Material Data (Stress-Strain Data)"}, {"description": "", "attribute": "workpiece_elements", "required": false, "choices": [{"name": "<1,000", "value": "<1,000"}, {"name": "<10,000", "value": "<10,000"}, {"name": "<100,000", "value": "<100,000"}, {"name": ">1,00,000", "value": ">1,00,000"}], "otype": "selection", "units": [], "name": "Workpiece Elements"}, {"description": "", "attribute": "use_of_crystal_plasticity_subroutine", "required": false, "choices": [{"name": "Yes", "value": "yes"}, {"name": "No", "value": "no"}], "otype": "selection", "units": [], "name": "Use of Crystal Plasticity Subroutine"}, {"description": "", "attribute": "workpiece_elements_to_track_texture_evolution_via_crystal_plasticity_calculation", "required": false, "choices": [], "otype": "string", "units": [], "name": "Workpiece Elements to Track Texture Evolution via Crystal Plasticity Calculation"}, {"description": "", "attribute": "workpiece_material_phase", "required": false, "choices": [{"name": "FCC", "value": "fcc"}, {"name": "BCC", "value": "bcc"}, {"name": "HCP", "value": "hcp"}], "otype": "selection", "units": [], "name": "Workpiece Material Phase"}, {"description": "", "attribute": "odf_mesh_resolution", "required": false, "choices": [{"name": "Mesh 1: 56 Elements", "value": "mesh_1:_56_elements"}, {"name": "Mesh 2: 448 Elements", "value": "mesh_2:_448_elements"}, {"name": "Mesh 3: 1512 Elements", "value": "mesh_3:_1512_elements"}], "otype": "selection", "units": [], "name": "ODF Mesh Resolution"}]}], "measurements": [], "does_transform": true, "process_type": "transform", "owner": "challan@umich.edu", "template_description": "", "id": "global_DEFORM Simulation", "name": "DEFORM Simulation"}
+{
+    "can_edit": true, 
+    "process_name": "DEFORM Simulation", 
+    "description": "", 
+    "setup": [
+        {
+            "attribute": "instrument", 
+            "name": "Instrument", 
+            "properties": [
+                {
+                    "description": "", 
+                    "attribute": "simulation_title", 
+                    "required": false, 
+                    "choices": [], 
+                    "otype": "string", 
+                    "units": [], 
+                    "name": "Simulation Title"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "workpiece_geometry_and_deformation_description", 
+                    "required": false, 
+                    "choices": [], 
+                    "otype": "string", 
+                    "units": [], 
+                    "name": "Workpiece Geometry and Deformation Description"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "increment_displacement_step", 
+                    "required": false, 
+                    "choices": [], 
+                    "otype": "string", 
+                    "units": [], 
+                    "name": "Increment Displacement Step"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "total_simulation_steps", 
+                    "required": false, 
+                    "choices": [], 
+                    "otype": "string", 
+                    "units": [], 
+                    "name": "Total Simulation Steps"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "workpiece_material", 
+                    "required": false, 
+                    "choices": [], 
+                    "otype": "string", 
+                    "units": [], 
+                    "name": "Workpiece Material"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "workpiece_material_data_(stress_strain_data)", 
+                    "required": false, 
+                    "choices": [
+                        {
+                            "name": "Built-in Library", 
+                            "value": "built_in_library"
+                        }, 
+                        {
+                            "name": "User-defined Data", 
+                            "value": "user_defined_data"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "name": "Workpiece Material Data (Stress-Strain Data)"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "workpiece_elements", 
+                    "required": false, 
+                    "choices": [
+                        {
+                            "name": "<1,000", 
+                            "value": "<1,000"
+                        }, 
+                        {
+                            "name": "<10,000", 
+                            "value": "<10,000"
+                        }, 
+                        {
+                            "name": "<100,000", 
+                            "value": "<100,000"
+                        }, 
+                        {
+                            "name": ">1,00,000", 
+                            "value": ">1,00,000"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "name": "Workpiece Elements"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "use_of_crystal_plasticity_subroutine", 
+                    "required": false, 
+                    "choices": [
+                        {
+                            "name": "Yes", 
+                            "value": "yes"
+                        }, 
+                        {
+                            "name": "No", 
+                            "value": "no"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "name": "Use of Crystal Plasticity Subroutine"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "workpiece_elements_to_track_texture_evolution_via_crystal_plasticity_calculation", 
+                    "required": false, 
+                    "choices": [], 
+                    "otype": "string", 
+                    "units": [], 
+                    "name": "Workpiece Elements to Track Texture Evolution via Crystal Plasticity Calculation"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "workpiece_material_phase", 
+                    "required": false, 
+                    "choices": [
+                        {
+                            "name": "FCC", 
+                            "value": "fcc"
+                        }, 
+                        {
+                            "name": "BCC", 
+                            "value": "bcc"
+                        }, 
+                        {
+                            "name": "HCP", 
+                            "value": "hcp"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "name": "Workpiece Material Phase"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "odf_mesh_resolution", 
+                    "required": false, 
+                    "choices": [
+                        {
+                            "name": "Mesh 1: 56 Elements", 
+                            "value": "mesh_1:_56_elements"
+                        }, 
+                        {
+                            "name": "Mesh 2: 448 Elements", 
+                            "value": "mesh_2:_448_elements"
+                        }, 
+                        {
+                            "name": "Mesh 3: 1512 Elements", 
+                            "value": "mesh_3:_1512_elements"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "name": "ODF Mesh Resolution"
+                }
+            ]
+        }
+    ], 
+    "measurements": [], 
+    "does_transform": true, 
+    "process_type": "transform", 
+    "owner": "challan@umich.edu", 
+    "template_description": "", 
+    "id": "global_DEFORM Simulation", 
+    "name": "DEFORM Simulation"
+}

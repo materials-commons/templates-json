@@ -1,1 +1,125 @@
-{"category": "", "process_name": "Tension", "description": "Tension", "setup": [{"attribute": "instrument", "name": "Instrument", "properties": [{"description": "", "attribute": "force_type", "required": false, "value": "", "choices": [{"name": "Screw", "value": "screw"}, {"name": "Hydraulic", "value": "hydraulic"}], "otype": "selection", "units": [], "unit": "", "name": "Force Type"}, {"description": "", "attribute": "control_mode", "required": false, "value": "", "choices": [{"name": "Displacement", "value": "displacement"}, {"name": "Force", "value": "force"}, {"name": "Strain", "value": "strain"}], "otype": "selection", "units": [], "unit": "", "name": "Control Mode"}, {"description": "", "attribute": "temperature", "required": false, "value": "", "choices": [], "otype": "number", "units": ["K", "F", "C"], "unit": "", "name": "Temperature"}, {"description": "", "attribute": "test_rate", "required": false, "value": "", "choices": [], "otype": "string", "units": [], "unit": "", "name": "Test Rate"}, {"description": "", "attribute": "gage_length", "required": false, "value": "", "choices": [], "otype": "number", "units": ["mm", "cm"], "unit": "", "name": "Gage Length"}, {"description": "", "attribute": "sample_geometry", "required": false, "value": "", "choices": [{"name": "Rectangular", "value": "rectangular"}, {"name": "Cylindrical", "value": "cylindrical"}], "otype": "selection", "units": [], "unit": "", "name": "Sample Geometry"}]}], "measurements": [], "does_transform": true, "process_type": "transform", "otype": "template", "owner": "template-admin", "destructive": false, "id": "global_Tension", "name": "Tension"}
+{
+    "category": "", 
+    "process_name": "Tension", 
+    "description": "Tension", 
+    "setup": [
+        {
+            "attribute": "instrument", 
+            "name": "Instrument", 
+            "properties": [
+                {
+                    "description": "", 
+                    "attribute": "force_type", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [
+                        {
+                            "name": "Screw", 
+                            "value": "screw"
+                        }, 
+                        {
+                            "name": "Hydraulic", 
+                            "value": "hydraulic"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Force Type"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "control_mode", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [
+                        {
+                            "name": "Displacement", 
+                            "value": "displacement"
+                        }, 
+                        {
+                            "name": "Force", 
+                            "value": "force"
+                        }, 
+                        {
+                            "name": "Strain", 
+                            "value": "strain"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Control Mode"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "temperature", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [
+                        "K", 
+                        "F", 
+                        "C"
+                    ], 
+                    "unit": "", 
+                    "name": "Temperature"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "test_rate", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "string", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Test Rate"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "gage_length", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [
+                        "mm", 
+                        "cm"
+                    ], 
+                    "unit": "", 
+                    "name": "Gage Length"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "sample_geometry", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [
+                        {
+                            "name": "Rectangular", 
+                            "value": "rectangular"
+                        }, 
+                        {
+                            "name": "Cylindrical", 
+                            "value": "cylindrical"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Sample Geometry"
+                }
+            ]
+        }
+    ], 
+    "measurements": [], 
+    "does_transform": true, 
+    "process_type": "transform", 
+    "otype": "template", 
+    "owner": "template-admin", 
+    "destructive": false, 
+    "id": "global_Tension", 
+    "name": "Tension"
+}

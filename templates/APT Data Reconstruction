@@ -1,1 +1,129 @@
-{"category": "", "process_name": "APT Data Reconstruction", "description": "Atom Probe Tomography Data Reconstruction", "setup": [{"attribute": "instrument", "name": "Instrument", "properties": [{"description": "", "attribute": "reconstruction_mode", "required": false, "value": "", "choices": [{"name": "Voltage", "value": "voltage"}, {"name": "Shank Angle", "value": "shank_angle"}, {"name": "Tip Image", "value": "tip_image"}, {"name": "Other", "value": "other"}], "otype": "selection", "units": [], "unit": "", "name": "Reconstruction Mode"}, {"description": "", "attribute": "field_factor", "required": false, "value": "", "choices": [], "otype": "number", "units": [], "unit": "", "name": "Field Factor"}, {"description": "", "attribute": "image_compression_factor", "required": false, "value": "", "choices": [], "otype": "number", "units": [], "unit": "", "name": "Image Compression Factor"}, {"description": "", "attribute": "evaporatoin_field", "required": false, "value": "", "choices": [], "otype": "number", "units": [], "unit": "V/nm", "name": "Evaporatoin Field"}, {"description": "", "attribute": "detection_efficiency", "required": false, "value": "", "choices": [], "otype": "number", "units": [], "unit": "percentage", "name": "Detection Efficiency"}, {"description": "", "attribute": "initial_radius", "required": false, "value": "", "choices": [], "otype": "number", "units": [], "unit": "nm", "name": "Initial Radius"}, {"description": "", "attribute": "shank_angle", "required": false, "value": "", "choices": [], "otype": "number", "units": ["degrees", "rad"], "unit": "", "name": "Shank Angle"}, {"description": "", "attribute": "cone_to_sphere_ratio", "required": false, "value": "", "choices": [], "otype": "number", "units": [], "unit": "", "name": "Cone To Sphere Ratio"}]}], "measurements": [], "does_transform": false, "process_type": "analysis", "otype": "template", "owner": "template-admin", "destructive": false, "id": "global_APT Data Reconstruction", "name": "APT Data Reconstruction"}
+{
+    "category": "", 
+    "process_name": "APT Data Reconstruction", 
+    "description": "Atom Probe Tomography Data Reconstruction", 
+    "setup": [
+        {
+            "attribute": "instrument", 
+            "name": "Instrument", 
+            "properties": [
+                {
+                    "description": "", 
+                    "attribute": "reconstruction_mode", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [
+                        {
+                            "name": "Voltage", 
+                            "value": "voltage"
+                        }, 
+                        {
+                            "name": "Shank Angle", 
+                            "value": "shank_angle"
+                        }, 
+                        {
+                            "name": "Tip Image", 
+                            "value": "tip_image"
+                        }, 
+                        {
+                            "name": "Other", 
+                            "value": "other"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Reconstruction Mode"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "field_factor", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Field Factor"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "image_compression_factor", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Image Compression Factor"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "evaporatoin_field", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [], 
+                    "unit": "V/nm", 
+                    "name": "Evaporatoin Field"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "detection_efficiency", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [], 
+                    "unit": "percentage", 
+                    "name": "Detection Efficiency"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "initial_radius", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [], 
+                    "unit": "nm", 
+                    "name": "Initial Radius"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "shank_angle", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [
+                        "degrees", 
+                        "rad"
+                    ], 
+                    "unit": "", 
+                    "name": "Shank Angle"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "cone_to_sphere_ratio", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Cone To Sphere Ratio"
+                }
+            ]
+        }
+    ], 
+    "measurements": [], 
+    "does_transform": false, 
+    "process_type": "analysis", 
+    "otype": "template", 
+    "owner": "template-admin", 
+    "destructive": false, 
+    "id": "global_APT Data Reconstruction", 
+    "name": "APT Data Reconstruction"
+}

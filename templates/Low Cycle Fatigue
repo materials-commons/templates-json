@@ -1,1 +1,175 @@
-{"category": "", "process_name": "Low Cycle Fatigue", "description": "Low Cycle Fatigue", "setup": [{"attribute": "instrument", "name": "Instrument", "properties": [{"description": "", "attribute": "mode", "required": false, "value": "", "choices": [{"name": "Total strain control", "value": "total_strain_control"}, {"name": "Plastic strain control", "value": "plastic_strain_control"}, {"name": "Stress control", "value": "stress_control"}, {"name": "Displacement control", "value": "displacement_control"}], "otype": "selection", "units": [], "unit": "", "name": "Mode"}, {"description": "", "attribute": "temperature", "required": false, "value": "", "choices": [], "otype": "number", "units": ["K", "F", "C"], "unit": "", "name": "Temperature"}, {"description": "", "attribute": "frequency", "required": false, "value": "", "choices": [], "otype": "number", "units": [], "unit": "", "name": "Frequency"}, {"description": "", "attribute": "wave_form", "required": false, "value": "", "choices": [{"name": "Continuous", "value": "continuous"}, {"name": "Interrupted with hold times", "value": "interrupted_with_hold_times"}], "otype": "selection", "units": [], "unit": "", "name": "Wave Form"}, {"description": "", "attribute": "wave_form_shape", "required": false, "value": "", "choices": [{"name": "Sinusoidal", "value": "sinusoidal"}, {"name": "Rectangular", "value": "rectangular"}, {"name": "Triangular", "value": "triangular"}], "otype": "selection", "units": [], "unit": "", "name": "Wave Form Shape"}, {"description": "", "attribute": "amplitude", "required": false, "value": "", "choices": [{"name": "Constant", "value": "constant"}, {"name": "Variable", "value": "variable"}], "otype": "selection", "units": [], "unit": "", "name": "Amplitude"}, {"description": "", "attribute": "load_ratio", "required": false, "value": "", "choices": [], "otype": "number", "units": [], "unit": "", "name": "Load Ratio"}, {"description": "", "attribute": "manufacturer", "required": false, "value": "", "choices": [], "otype": "string", "units": [], "unit": "", "name": "Manufacturer"}, {"description": "", "attribute": "strain_limits", "required": false, "value": "", "choices": [], "otype": "number", "units": ["mm/mm", "percentage"], "unit": "", "name": "Strain Limits"}]}], "measurements": [], "does_transform": true, "process_type": "transform", "otype": "template", "owner": "template-admin", "destructive": false, "id": "global_Low Cycle Fatigue", "name": "Low Cycle Fatigue"}
+{
+    "category": "", 
+    "process_name": "Low Cycle Fatigue", 
+    "description": "Low Cycle Fatigue", 
+    "setup": [
+        {
+            "attribute": "instrument", 
+            "name": "Instrument", 
+            "properties": [
+                {
+                    "description": "", 
+                    "attribute": "mode", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [
+                        {
+                            "name": "Total strain control", 
+                            "value": "total_strain_control"
+                        }, 
+                        {
+                            "name": "Plastic strain control", 
+                            "value": "plastic_strain_control"
+                        }, 
+                        {
+                            "name": "Stress control", 
+                            "value": "stress_control"
+                        }, 
+                        {
+                            "name": "Displacement control", 
+                            "value": "displacement_control"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Mode"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "temperature", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [
+                        "K", 
+                        "F", 
+                        "C"
+                    ], 
+                    "unit": "", 
+                    "name": "Temperature"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "frequency", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Frequency"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "wave_form", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [
+                        {
+                            "name": "Continuous", 
+                            "value": "continuous"
+                        }, 
+                        {
+                            "name": "Interrupted with hold times", 
+                            "value": "interrupted_with_hold_times"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Wave Form"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "wave_form_shape", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [
+                        {
+                            "name": "Sinusoidal", 
+                            "value": "sinusoidal"
+                        }, 
+                        {
+                            "name": "Rectangular", 
+                            "value": "rectangular"
+                        }, 
+                        {
+                            "name": "Triangular", 
+                            "value": "triangular"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Wave Form Shape"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "amplitude", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [
+                        {
+                            "name": "Constant", 
+                            "value": "constant"
+                        }, 
+                        {
+                            "name": "Variable", 
+                            "value": "variable"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Amplitude"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "load_ratio", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Load Ratio"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "manufacturer", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "string", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Manufacturer"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "strain_limits", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [
+                        "mm/mm", 
+                        "percentage"
+                    ], 
+                    "unit": "", 
+                    "name": "Strain Limits"
+                }
+            ]
+        }
+    ], 
+    "measurements": [], 
+    "does_transform": true, 
+    "process_type": "transform", 
+    "otype": "template", 
+    "owner": "template-admin", 
+    "destructive": false, 
+    "id": "global_Low Cycle Fatigue", 
+    "name": "Low Cycle Fatigue"
+}

@@ -1,1 +1,36 @@
-{"category": "create_sample", "process_name": "Generic Create Samples Template", "description": "Generic Create Samples Template", "setup": [{"attribute": "instrument", "name": "Instrument", "properties": []}], "measurements": [{"description": "", "attribute": "composition", "required": false, "value": [], "choices": [], "otype": "composition", "units": ["at%", "wt%", "atoms"], "unit": "", "name": "Composition"}], "does_transform": true, "process_type": "create", "otype": "template", "owner": "template-admin", "destructive": false, "id": "global_Generic Create Samples Template", "name": "Generic Create Samples Template"}
+{
+    "category": "create_sample", 
+    "process_name": "Generic Create Samples Template", 
+    "description": "Generic Create Samples Template", 
+    "setup": [
+        {
+            "attribute": "instrument", 
+            "name": "Instrument", 
+            "properties": []
+        }
+    ], 
+    "measurements": [
+        {
+            "description": "", 
+            "attribute": "composition", 
+            "required": false, 
+            "value": [], 
+            "choices": [], 
+            "otype": "composition", 
+            "units": [
+                "at%", 
+                "wt%", 
+                "atoms"
+            ], 
+            "unit": "", 
+            "name": "Composition"
+        }
+    ], 
+    "does_transform": true, 
+    "process_type": "create", 
+    "otype": "template", 
+    "owner": "template-admin", 
+    "destructive": false, 
+    "id": "global_Generic Create Samples Template", 
+    "name": "Generic Create Samples Template"
+}

@@ -1,1 +1,110 @@
-{"category": "", "process_name": "DIC Patterning", "description": "DIC Patterning", "setup": [{"attribute": "instrument", "name": "Instrument", "properties": [{"description": "", "attribute": "scale", "required": false, "value": "", "choices": [{"name": "Large-Scale", "value": "large_scale"}, {"name": "Small-Scale", "value": "small_scale"}], "otype": "selection", "units": [], "unit": "", "name": "Scale"}, {"description": "", "attribute": "field_of_view", "required": false, "value": "", "choices": [], "otype": "number", "units": [], "unit": "microns", "name": "Field Of View"}, {"description": "", "attribute": "particle_size", "required": false, "value": "", "choices": [], "otype": "number", "units": ["microns", "nm"], "unit": "", "name": "Particle Size"}, {"description": "", "attribute": "particle_type", "required": false, "value": "", "choices": [{"name": "Alumina", "value": "alumina"}, {"name": "Gold", "value": "gold"}], "otype": "selection", "units": [], "unit": "", "name": "Particle Type"}, {"description": "", "attribute": "silane_type", "required": false, "value": "", "choices": [{"name": "APTMS", "value": "aptms"}, {"name": "MPTMS", "value": "mptms"}, {"name": "N/A", "value": "n_a"}], "otype": "selection", "units": [], "unit": "", "name": "Silane Type"}]}], "measurements": [], "does_transform": false, "process_type": "measurement", "otype": "template", "owner": "template-admin", "destructive": false, "id": "global_DIC Patterning", "name": "DIC Patterning"}
+{
+    "category": "", 
+    "process_name": "DIC Patterning", 
+    "description": "DIC Patterning", 
+    "setup": [
+        {
+            "attribute": "instrument", 
+            "name": "Instrument", 
+            "properties": [
+                {
+                    "description": "", 
+                    "attribute": "scale", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [
+                        {
+                            "name": "Large-Scale", 
+                            "value": "large_scale"
+                        }, 
+                        {
+                            "name": "Small-Scale", 
+                            "value": "small_scale"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Scale"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "field_of_view", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [], 
+                    "unit": "microns", 
+                    "name": "Field Of View"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "particle_size", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [
+                        "microns", 
+                        "nm"
+                    ], 
+                    "unit": "", 
+                    "name": "Particle Size"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "particle_type", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [
+                        {
+                            "name": "Alumina", 
+                            "value": "alumina"
+                        }, 
+                        {
+                            "name": "Gold", 
+                            "value": "gold"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Particle Type"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "silane_type", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [
+                        {
+                            "name": "APTMS", 
+                            "value": "aptms"
+                        }, 
+                        {
+                            "name": "MPTMS", 
+                            "value": "mptms"
+                        }, 
+                        {
+                            "name": "N/A", 
+                            "value": "n_a"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Silane Type"
+                }
+            ]
+        }
+    ], 
+    "measurements": [], 
+    "does_transform": false, 
+    "process_type": "measurement", 
+    "otype": "template", 
+    "owner": "template-admin", 
+    "destructive": false, 
+    "id": "global_DIC Patterning", 
+    "name": "DIC Patterning"
+}

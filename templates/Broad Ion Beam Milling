@@ -1,1 +1,75 @@
-{"category": "", "process_name": "Broad Ion Beam Milling", "description": "Broad Ion Beam Milling", "setup": [{"attribute": "instrument", "name": "Instrument", "properties": [{"description": "", "attribute": "ion_type", "required": false, "value": "", "choices": [{"name": "Ga", "value": "ga"}, {"name": "Ne", "value": "ne"}, {"name": "Ar", "value": "ar"}, {"name": "Other", "value": "other"}], "otype": "selection", "units": [], "unit": "", "name": "Ion Type"}, {"description": "", "attribute": "energy", "required": false, "value": "", "choices": [], "otype": "number", "units": [], "unit": "V", "name": "Energy"}, {"description": "", "attribute": "time", "required": false, "value": "", "choices": [], "otype": "number", "units": ["h", "m", "s"], "unit": "", "name": "Time"}]}], "measurements": [], "does_transform": true, "process_type": "measurement", "otype": "template", "owner": "template-admin", "destructive": false, "id": "global_Broad Ion Beam Milling", "name": "Broad Ion Beam Milling"}
+{
+    "category": "", 
+    "process_name": "Broad Ion Beam Milling", 
+    "description": "Broad Ion Beam Milling", 
+    "setup": [
+        {
+            "attribute": "instrument", 
+            "name": "Instrument", 
+            "properties": [
+                {
+                    "description": "", 
+                    "attribute": "ion_type", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [
+                        {
+                            "name": "Ga", 
+                            "value": "ga"
+                        }, 
+                        {
+                            "name": "Ne", 
+                            "value": "ne"
+                        }, 
+                        {
+                            "name": "Ar", 
+                            "value": "ar"
+                        }, 
+                        {
+                            "name": "Other", 
+                            "value": "other"
+                        }
+                    ], 
+                    "otype": "selection", 
+                    "units": [], 
+                    "unit": "", 
+                    "name": "Ion Type"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "energy", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [], 
+                    "unit": "V", 
+                    "name": "Energy"
+                }, 
+                {
+                    "description": "", 
+                    "attribute": "time", 
+                    "required": false, 
+                    "value": "", 
+                    "choices": [], 
+                    "otype": "number", 
+                    "units": [
+                        "h", 
+                        "m", 
+                        "s"
+                    ], 
+                    "unit": "", 
+                    "name": "Time"
+                }
+            ]
+        }
+    ], 
+    "measurements": [], 
+    "does_transform": true, 
+    "process_type": "measurement", 
+    "otype": "template", 
+    "owner": "template-admin", 
+    "destructive": false, 
+    "id": "global_Broad Ion Beam Milling", 
+    "name": "Broad Ion Beam Milling"
+}
